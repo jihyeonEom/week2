@@ -2,7 +2,8 @@ import Computer.*;
 import Computer.Component.Cooler.Cooler;
 import Computer.Component.Cooler.CoolingWay;
 import Computer.Component.Cpu.Cpu;
-import Computer.Component.Cpu.Purpose;
+import Computer.Component.Cpu.CpuPurpose;
+import Computer.Component.GracphicCard.GCPurpose;
 import Computer.Component.GracphicCard.GraphicsCard;
 import Computer.Component.KeyBoard.KeyBoard;
 import Computer.Component.KeyBoard.Layout;
@@ -14,9 +15,9 @@ import Computer.Component.Ram.Ram;
 
 public class Main {
     public static void main(String[] args) {
-        Cpu cpu = new Cpu("intel", 10, Maker.INTEL, 100, Purpose.GAMING);
+        Cpu cpu = new Cpu("intel", 10, Maker.INTEL, 100, CpuPurpose.GAMING);
         Ram ram = new Ram("Samsung", 5, Maker.SAMSUNG, "8GB");
-        GraphicsCard graphicsCard = new GraphicsCard("Nvidia", 30, Maker.NVIDIA, "Gaming");
+        GraphicsCard graphicsCard = new GraphicsCard("Nvidia", 30, Maker.NVIDIA, GCPurpose.GAMING);
         PowerSupplier power = new PowerSupplier("Cooler Master", 3, Maker.COOLER_MASTER, 500);
         Cooler cooler = new Cooler("Thermaltake", 12, Maker.COOLER_MASTER, CoolingWay.WATER);
         Mouse mouse = new Mouse("Logitech", 1, Maker.LOGITECH);

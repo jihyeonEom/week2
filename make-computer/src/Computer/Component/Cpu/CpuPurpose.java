@@ -1,5 +1,5 @@
 package Computer.Component.Cpu;
 
-public enum Purpose {
+public enum CpuPurpose {
     GAMING, OFFICE, ENGINEERING
 }

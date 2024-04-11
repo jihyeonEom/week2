@@ -1,5 +1,5 @@
 package Computer.Component.GracphicCard;
 
-public enum Purpose {
+public enum GCPurpose {
     GAMING, OFFICE, ENGINEERING
 }

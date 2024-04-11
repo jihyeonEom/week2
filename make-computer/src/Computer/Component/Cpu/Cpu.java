@@ -5,9 +5,9 @@ import Computer.Component.Maker;
 
 public class Cpu extends Component {
     private int speed;
-    private Purpose purpose;
+    private CpuPurpose purpose;
 
-    public Cpu(String name, int price, Maker maker, int speed, Purpose use){
+    public Cpu(String name, int price, Maker maker, int speed, CpuPurpose use){
         super(name, price, maker);
         this.speed = speed;
         this.purpose = use;

@@ -4,9 +4,9 @@ import Computer.Component.Component;
 import Computer.Component.Maker;
 
 public class GraphicsCard extends Component {
-    private String propose;
+    private GCPurpose propose;
 
-    public GraphicsCard(String name, int price, Maker maker, String purpose){
+    public GraphicsCard(String name, int price, Maker maker, GCPurpose purpose){
         super(name, price, maker);
         this.propose = purpose;
     }
